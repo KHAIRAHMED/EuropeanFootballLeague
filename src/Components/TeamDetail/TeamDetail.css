@@ -1,0 +1,89 @@
+/* top background for team details   */
+.teamDetailsBg{
+    background-position: center;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    opacity: 0.6;
+}
+.teamLogo{
+    width: 150px;
+}
+
+/* main part of team details  */
+.teamDetailsMain{
+    padding: 2% 10%;
+    background: #0E0A2A;
+    color: white;
+    margin: auto;
+}
+.teamDetailsCard{
+    background: rgb(106, 106, 240);
+    border-radius: 10px;
+    line-height: 1;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    /* height: 9.5rem; */
+}
+.cardDetails{
+    align-self: center;
+    padding-left: 15px;
+}
+.cardImg{
+    align-self: center;
+    justify-self: end;
+    margin-right: 8px;
+}
+.cardImg img{
+    width: 350px;
+    height: 9.5rem;
+}
+
+/* footer part  */
+.footer{
+    text-align: center;
+}
+.footer a{
+    padding-right: 10px;
+    text-decoration: none ;
+}
+
+
+/* media query  */
+@media screen and (max-width: 720px){
+    .cardImg img{
+        width: 280px;
+        height: 11rem;
+    }
+}
+@media screen and (max-width: 620px){
+    .teamDetailsCard{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        /* justify-items: center; */
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 280px;
+        /* text-align: center; */
+        margin: auto;
+    }
+ .cardDetails{
+        align-self: center;
+        justify-self: center;
+        padding-left: 0px;
+    }
+    .cardImg{
+        align-self: center;
+        justify-self: center;
+        margin-left: 0px;
+        padding-left: 0px;
+    } 
+    .cardImg img{
+        width: 250px;
+        height: 200px;
+    }
+}
